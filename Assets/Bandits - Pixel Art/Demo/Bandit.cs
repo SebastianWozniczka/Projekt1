@@ -121,17 +121,17 @@ public class Bandit : MonoBehaviour {
 
                     enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
 
-                    atk = false;
+                  
                 }
                 hitBlock = true;
           
-
+            atk = false;
         }
 
         if (hitBlock)
         {
             hitTimer += Time.deltaTime;
-            if (hitTimer > 2)
+            if (hitTimer > 1)
             {
                 hitBlock = false;
                 hitTimer = 0;
@@ -196,7 +196,7 @@ public class Bandit : MonoBehaviour {
 
             if (currentHealth <= 0)
             {
-                Die();
+               // Die();
             }
         }
     }
@@ -244,6 +244,7 @@ public class Bandit : MonoBehaviour {
     
     void PlayerAttack()
     {
+        if(!hitBlock)
         atk = true;
     }
 

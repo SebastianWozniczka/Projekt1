@@ -21,24 +21,24 @@ public class Finish : MonoBehaviour
         timer += Time.deltaTime;
         number = (int)timer;
 
-        text.text = "" + number;
+       text.text = "" + number;
 
         if (enemy.enabled == false)
         {
-            text.text = "Wygrana!";
+            text.text = "Ukończono wstęp!";
             
-            timer2 += Time.deltaTime;
+         timer2 += Time.deltaTime;
             if (timer2 > 2)
-                Application.Quit();
+                SceneManager.LoadScene("Wybór misji");
         }
-        if (player.enabled == false)
-        {
-            text.text = "Przegrana!";
+        //if (player.enabled == false)
+       // {//
+            //text.text = "Przegrana!";
           
-            timer2 += Time.deltaTime;
-            if (timer2 > 2)
-                Application.Quit();
-        }
+           // timer2 += Time.deltaTime;
+           // if (timer2 > 2)
+             //  Application.Quit();
+        //}
 
     }
 }

@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/stare/Scenes/Arena.unity
     guid: 8863ea367df02fd448ae8592502eaef8
+  - enabled: 1
+    path: "Assets/stare/Scenes/Wyb\xF3r misji.unity"
+    guid: 108a32be63f2fd5439efce85042e6f59
   m_configObjects: {}
